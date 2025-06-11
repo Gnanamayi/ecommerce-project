@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#shop-section h5, #shop-section h3 {
+    font-weight: 600;
+  }
+  
+  #shop-section hr {
+    width: 30px;
+    height: 3px;
+    background: coral;
+    border: none;
+  }
+  
+  .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Special button style for Seller and Buyer */
+.btn {
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 13px 30px;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(1,1,1,0.3);
+}
+
+.btn:hover {
+    background-color: coral;
+    transform: scale(1.05);
+}
+
+
+/* Optional: Flex container for spacing */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Typography */
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.8rem; font-weight: 600; }
+h3 { font-size: 1.5rem; font-weight: 800; }
+h4 { font-size: 1.2rem; font-weight: 600; }
+h5 { font-size: 1rem; font-weight: 400; }
+h6 { color: #d8d8d8; }
+
+/* Buttons */
+button {
+    font-size: 0.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 13px 30px;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: coral;
+}
+
+/* Navigation Bar */
+.navbar {
+    font-size: 16px;
+    padding: 2rem 1rem;
+    top: 0;
+    left: 0;
+    background-color: white;
+    position: sticky;
+    z-index: 1000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0 20px;
+    color: black;
+    transition: color 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover {
+    color: coral;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    margin-left: 15px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    margin-left: auto;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+/* Responsive Navigation */
+@media only screen and (max-width: 990px) {
+    .nav-buttons {
+        margin: 10px 0;
+    }
+    .nav-buttons ul {
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav-buttons ul .fas {
+        margin: 20px 5px 10px 20px;
+    }
+}
+#home1 {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #home1 h1 {
+    font-size: 48px;
+    color: #343a40; /* Dark gray text */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+
+/* Home Section */
+#home {
+    background-image: url('../images/back.jpeg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#ho {
+    background-image: url('../images/homebg.jpeg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#ho span {
+    color: chocolate;
+}
+
+#home span {
+    color: chocolate;
+}
+
+/* New Products Section */
+#new .one {
+    overflow: hidden;
+    position: relative;
+}
+
+#new .product-img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px auto;
+    transition: transform 0.4s ease;
+}
+
+#new .one:hover .product-img {
+    transform: scale(1.1);
+}
+
+#new h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#new button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new button:hover {
+    background-color: #444;
+}
+
+/* Product Card */
+.product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.star i {
+    color: #ffc107;
+}
+
+.buy-btn {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.product {
+    border: 2px solid whitesmoke;
+}
+
+.shop-buy-btn{
+    background-color: #fb774b;
+    opacity: 1;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* .buy-btn {
+    background: #000;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product:hover .buy-btn {
+    opacity: 1;
+    visibility: visible;
+} */
+
+/* Banner Section */
+#banner {
+    background-image: url('../images/banner.png');
+    width: 100%;
+    color: bisque;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Divider Line */
+.orange-line {
+    width: 60px;
+    height: 3px;
+    background-color: coral;
+    border: none;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #212121;
+    color: #5f6d6d;
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #7a8787;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.79rem;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.single-product input:focus{
+    outline: none;
+}
+.single-product .buy-btn{
+    background-color:#fb774b;
+    opacity: 1;
+    transition: 0.4s all;
+
+}
+.single-product .buy-btn:hover{
+    background-color: #222222;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #fb774b;
+}
+.cart td{
+    padding: 10px 20px;
+
+}
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.cart td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.cart td a{
+    color: #fb774b;
+}
+
+.cart .remove-btn{
+    color: #fb774b;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+.cart .edit-btn{
+    color: #fb774b;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+}
+.cart .product-info p{
+    margin: 3px;
+
+}
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top:#fb774b solid 3px
+}
+td :last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+button.checkout-btn{
+    background-color:#fb774b ;
+    color: #fff;
+}
+/* #login-form{
+    width:50%;margin: 5px;
+    text-align: center;
+    padding: 20px;
+    border-top: solid 1px #fb774b;
+}
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+    
+
+}
+#login-form #login-btn{
+    background-color: #fb774b;
+    color: #f5f5f5;
+}
+#login-form #register-url{
+    color: #fb774b;
+} */
+#login-form {
+    width: 100%;
+    max-width: 400px; /* Limits form width on larger screens */
+    margin: 20px auto; /* Centers the form with more vertical space */
+    text-align: center;
+    padding: 30px;
+    border-top: 3px solid #fb774b; /* Thicker, more prominent line */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Soft rounded corners */
+}
+
+#login-form .form-group {
+    margin-bottom: 1.2rem; /* Better spacing between form groups */
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+#login-form input {
+    width: 100%; /* Full width of form */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#login-form input:focus {
+    outline: none;
+    border-color: #fb774b;
+    box-shadow: 0 0 0 2px rgba(251, 119, 75, 0.2);
+}
+
+#login-form #login-btn {
+    width: 100%;
+    background-color: #fb774b;
+    color: #f5f5f5;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form #login-btn:hover {
+    background-color: #e6683d; /* Slightly darker on hover */
+}
+
+#login-form #register-url {
+    color: #fb774b;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+#login-form #register-url:hover {
+    color: #e6683d;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    #login-form {
+        padding: 20px 15px;
+        max-width: 90%; /* More width on small screens */
+    }
+}
+
+
+
+
+
+
+#register-form {
+    width: 100%;
+    max-width: 400px; /* Limits form width on larger screens */
+    margin: 20px auto; /* Centers the form with more vertical space */
+    text-align: center;
+    padding: 30px;
+    border-top: 3px solid #fb774b; /* Thicker, more prominent line */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Soft rounded corners */
+}
+
+#register-form .form-group {
+    margin-bottom: 1.2rem; /* Better spacing between form groups */
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+#register-form input {
+    width: 100%; /* Full width of form */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#register-form input:focus {
+    outline: none;
+    border-color: #fb774b;
+    box-shadow: 0 0 0 2px rgba(251, 119, 75, 0.2);
+}
+
+#register-form #login-btn {
+    width: 100%;
+    background-color: #fb774b;
+    color: #f5f5f5;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-form #register-btn:hover {
+    background-color: #e6683d; /* Slightly darker on hover */
+}
+
+#register-form #login-url {
+    color: #fb774b;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+#register-form #login-url:hover {
+    color: #e6683d;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    #register-form {
+        padding: 20px 15px;
+        max-width: 90%; /* More width on small screens */
+    }
+}
+
+#account-form{
+    width: 505;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+#account-form input{
+    margin: 5px auto;
+}
+#account-form #change-pass-btn{
+    color: #f5f5f5;
+    background-color: #fb774b;
+}
+
+.account-info #orders-btn,#logout-btn{
+    color: #fb774b;
+    text-decoration: none;
+}
+
+/* orders */
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.orders .product-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 30px; /* Move product content to the right */
+}
+
+.orders th {
+    text-align: left;
+    padding: 12px 30px; /* Increased padding with right shift */
+    color: white;
+    background-color: #fb774b;
+    font-weight: 500;
+}
+
+.orders td {
+    padding: 15px 30px; /* Increased padding with right shift */
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.orders td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.orders td span {
+    display: inline-block;
+    padding-left: 10px; /* Additional right shift for date */
+}
+
+/* Center the heading and divider */
+.orders .container.mt-2 {
+    text-align: center;
+}
+
+.orders .container.mt-2 hr.mx-auto {
+    margin: 10px auto 30px; /* Better spacing */
+}
+
+/* Hover effect for rows */
+.orders tr:hover td {
+    background-color: #f9f9f9;
+}
+
+.orders .order-details-btn{
+color:white;
+background-color: #e6683d;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .orders .product-info {
+        padding-left: 15px;
+    }
+    
+    .orders th, 
+    .orders td {
+        padding: 10px 15px;
+    }
+    
+    .orders td img {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+}
+
+/* checkout */
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+    
+}
+#checkout-form .checkout-large-element{
+    width: 96.5%;
+
+}
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+
+}
+#checkout-form #checkout-btn{
+    color: #fff;
+    background-color: #fb774b;
+}
+
+#contact span{
+    color:#fb774b;
+    
+}
